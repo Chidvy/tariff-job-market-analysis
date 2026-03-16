@@ -1,0 +1,7 @@
+event,start_date,end_date,sectors_affected,avg_tariff_rate
+Bush Steel Tariffs,2002-03-01,2003-12-01,"steel,auto,manufacturing",30
+China PNTR / WTO Accession,2001-12-01,2010-12-01,"manufacturing,textiles,electronics",5
+Trump Trade War Phase 1,2018-03-01,2019-12-01,"steel,aluminum,agriculture,tech",25
+Trade War Phase 2 / COVID,2020-01-01,2021-12-01,all,19
+Biden Tariff Continuations,2022-01-01,2024-12-01,"steel,chips,EVs",25
+2025 Tariff Escalation,2025-01-01,,"consumer goods,chips,autos",45
