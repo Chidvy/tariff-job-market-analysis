@@ -2,6 +2,24 @@
 
 ---
 
+## 🎯 3 Insights a Hiring Manager Will Remember
+
+**1. Manufacturing lost 4.56 million jobs since its 2001 peak (-26%)**
+Driven by China trade normalization, automation, and tariff-induced
+supply chain restructuring. Tariffs slowed but never reversed the decline.
+
+**2. Construction is the silent winner — +1.51M jobs since 2009**
+Reshoring factory construction, CHIPS Act semiconductor plants, and EV
+infrastructure are accelerating growth. The one sector where tariffs
+created more jobs than they destroyed.
+
+**3. Retail added ZERO net jobs 2019–2024 despite full economic recovery**
+E-commerce displacement has flatlined the sector structurally.
+Tariff-driven cost pressure makes the 2025–2029 outlook the worst
+of any sector in this analysis.
+
+---
+
 ## 🔍 What This Project Actually Shows
 
 This end-to-end analysis connects U.S. tariff policy to labor market shifts across 
