@@ -2,7 +2,7 @@
 
 ## TL;DR for Hiring Managers
 Built an end-to-end labor market analytics platform analyzing the impact 
-of U.S. tariff policy on employment using BLS, FRED, and USITC data (2000–2024), 
+of U.S. tariff policy on employment using BLS, FRED, and USITC data (2015–2025), 
 with validated 5-year forecasts through 2029.
 
 **Headline Finding:**
@@ -127,7 +127,7 @@ tariff-job-market-analysis/
 ## 💡 Resume Bullets
 
 > Built an end-to-end analytics pipeline analyzing U.S. tariff policy
-> impact on employment (2000–2024) using BLS, FRED, and USITC APIs
+> impact on employment (2015–2025) using BLS, FRED, and USITC APIs
 
 > Developed and validated 5-year forecasts using Prophet, achieving <4%
 > error vs 2026 BLS data; identified 3x downstream job loss vs protected
