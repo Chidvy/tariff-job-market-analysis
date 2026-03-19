@@ -1,139 +1,162 @@
-# 📦 U.S. Tariffs & The Job Market — Labor Analytics Platform
+# U.S. Tariffs and the Job Market: Sector-Level Employment Analysis and Forecasting
 
-## TL;DR for Hiring Managers
-Built an end-to-end labor market analytics platform analyzing the impact 
-of U.S. tariff policy on employment using BLS, FRED, and USITC data (2015–2025), 
-with validated 5-year forecasts through 2029.
+## Summary
 
-**Headline Finding:**
-> Tariff protection creates ~3x downstream job loss vs jobs protected —
-> with employment effects lagging policy announcements by 6–9 months.
+This project examines how major U.S. tariff episodes aligned with sector-level employment shifts using BLS, FRED, and USITC data.
 
-Designed to enable decision-making across policy analysis, supply chain 
-strategy, and investment planning.
+I built an end-to-end labor-market analysis workflow covering **2015–2025**, with forecasts through **2030**, to test whether tariff-related protection supported durable job growth or instead contributed to more uneven sector outcomes beneath strong aggregate payroll numbers.
+
+**Headline insight:** tariff-related protection appears to support select upstream industries, but broader labor-market effects remain mixed, unevenly distributed, and often delayed rather than immediate.
 
 ---
 
-## 🎯 Key Results
+## Why this project matters
 
-- **Manufacturing shed 4.56M jobs** since its 2001 peak — tariffs slowed
-  but never reversed the structural decline
-- **Construction gained +1.51M jobs** since 2009 — the silent winner of
-  reshoring policy and trade protection
-- **Retail added zero net jobs 2019–2024** despite full economic recovery
-- **Achieved <4% forecast error** across 4 of 5 sectors vs real BLS
-  March 2026 data — validated, not estimated
+This project was built around a practical question:
 
----
+**Do tariff-related policy shifts create durable labor-market strength, or do they redistribute job growth in ways that make the economy look stronger in aggregate than it is at the sector level?**
 
-## 📌 Project Overview
+That matters for:
 
-End-to-end analysis of how U.S. tariff policy reshaped American employment
-across 5 major sectors from 2015–2025, with a 5-year forecast through 2029.
-
-**Core questions answered:**
-- How did the 2002 Steel Tariffs affect manufacturing employment?
-- What happened to jobs during the 2018–2019 U.S.–China Trade War?
-- Which sectors gained and lost after each major tariff wave?
-- What does the next 5 years look like under 2025 tariff escalation?
+- policy analysis
+- labor-market interpretation
+- supply chain strategy
+- business and investment decision-making
 
 ---
 
-## 📊 Key Findings
+## Key findings
 
-| Event | Year | Impact |
-|-------|------|--------|
-| Bush Steel Tariffs | 2002 | -200K downstream jobs |
-| China PNTR Effect | 2001–2010 | -2.4M manufacturing jobs |
-| Trump Trade War | 2018–2019 | +steel jobs, -agriculture |
-| COVID Supply Chain | 2020–2021 | -22M peak, uneven recovery |
-| 2025 Escalation | 2025+ | Forecast in this project |
-
-**Critical pattern:** Employment effects lag tariff announcements by
-**6–9 months** — a measurable, consistent signal across all major events.
+- **Manufacturing** remained structurally weak despite protection-focused policy support
+- **Construction** appeared to benefit more than most sectors from reshoring and domestic investment dynamics
+- **Retail Trade** showed weak net job growth despite broader recovery periods
+- **Labor-market effects often appeared with a lag**, rather than immediately after major tariff episodes
+- **Forecasts validated well against realized BLS data**, with forecast error below 4% in 4 of 5 sectors
 
 ---
 
-## ✅ Forecast Validation vs BLS (March 2026)
+## Main takeaway
 
-Achieved **<4% error across 80% of sectors** validated against
-real BLS post-benchmark data:
+Headline job growth can make the labor market look stronger than it really is.
+
+This analysis suggests that tariff-related protection may support select upstream industries, but broader labor-market effects are more mixed. Employment gains appear unevenly distributed, and the impact on jobs often shows up with a lag rather than immediately after policy changes.
+
+That means aggregate job numbers alone may not fully reflect what is happening underneath the surface.
+
+**Bottom line:** the labor market may appear stable in aggregate while sector-level conditions tell a more fragile and uneven story.
+
+---
+
+## Scope of analysis
+
+### Historical window
+- **2015–2025**
+
+### Forecast window
+- **2026–2030**
+
+### Sectors analyzed
+- Manufacturing
+- Construction
+- Retail Trade
+- Transportation & Warehousing
+- Total Nonfarm Payrolls
+
+### Policy episodes examined
+- 2018–2019 U.S.–China Trade War
+- 2020–2021 COVID and supply-chain disruption period
+- 2025 tariff escalation as a forward-looking scenario context
+
+---
+
+## Methodology
+
+I built a multi-step workflow using public economic data:
+
+- collected labor-market and macroeconomic data from **BLS**, **FRED**, and **USITC**
+- cleaned and standardized time-series data in **Python**
+- stored structured datasets in **PostgreSQL**
+- used **SQL** for trend, sector, and lag analysis
+- generated five-year forecasts in **Prophet**
+- validated forecast outputs against realized **BLS** data where available
+- designed a **Tableau** dashboard to make findings easier to interpret
+
+---
+
+## Forecast validation
+
+Forecast performance was checked against realized BLS data.
 
 | Sector | Forecast | BLS Actual | Error |
 |--------|----------|------------|-------|
-| Construction | 8,286K | 8,309K | ✅ 0.3% |
-| Manufacturing | 13,194K | 12,573K | ⚠️ 5%* |
-| Retail Trade | 15,459K | 15,427K | ✅ 0.2% |
-| Total Nonfarm | 157,616K | 158,466K | ✅ 0.5% |
-| Transportation | 6,294K | 6,532K | ✅ 3.6% |
+| Construction | 8,286K | 8,309K | 0.3% |
+| Manufacturing | 13,194K | 12,573K | 5.0%* |
+| Retail Trade | 15,459K | 15,427K | 0.2% |
+| Total Nonfarm | 157,616K | 158,466K | 0.5% |
+| Transportation & Warehousing | 6,294K | 6,532K | 3.6% |
 
-*Gap caused by BLS historic -911K benchmark revision (Feb 2025).
-Directional forecast remains correct.
+**Validation result:** forecast error remained below **4% in 4 of 5 sectors**, supporting the model’s usefulness for directional sector-level forecasting.
 
----
-
-## 🛠️ Tech Stack
-
-| Layer | Tool | What It Enabled |
-|-------|------|-----------------|
-| Collection | Python + BLS/FRED/USITC APIs | 288 months of real economic data |
-| Storage | PostgreSQL | Structured multi-sector data model |
-| Analysis | SQL (CTEs, window functions) | Cross-sector trend and lag analysis |
-| Forecasting | Prophet 1.3.0 | 5-year employment projections |
-| Validation | BLS CES March 2026 | <4% error benchmark confirmed |
-| Visualization | Tableau | Interactive policy impact dashboard |
+\* Manufacturing deviation was influenced by benchmark revision effects.
 
 ---
 
-## 📈 Tableau Dashboard
+## Forward-looking insight
 
-Designed an interactive dashboard enabling exploration of tariff impacts
-across sectors — including lag analysis, forecast scenarios, and
-annotated policy timelines.
+The labor market is not simply “strong” or “weak.”
 
-🔗 [View Live Dashboard](#) *(link after Tableau Public publish)*
+What this project suggests is that job growth may be becoming more **uneven, concentrated, and policy-sensitive**.
 
----
+In practical terms:
 
-## 🗂️ Repo Structure
-```
-tariff-job-market-analysis/
-├── scripts/
-│   ├── collect_data.py         # BLS, FRED, USITC API ingestion
-│   ├── clean_data.py           # Normalization and merging
-│   ├── db_loader.py            # PostgreSQL loader
-│   └── prophet_forecast.py    # Validated 5-year forecast
-├── sql/
-│   ├── schema.sql              # Data model
-│   └── analysis_queries.sql   # Lag and trend analysis
-├── data/cleaned/
-│   ├── employment_monthly.csv
-│   └── prophet_forecast_all_sectors.csv
-├── FINDINGS.md                 # Full research conclusions
-└── README.md
-```
+- some sectors benefit
+- some sectors stagnate
+- some sectors absorb delayed downstream pressure
+- headline job growth can mask divergence underneath
 
 ---
 
-## 📚 Data Sources
+## Tableau dashboard
 
-- [BLS Current Employment Statistics](https://www.bls.gov/ces/)
-- [FRED Federal Reserve Economic Data](https://fred.stlouisfed.org/)
-- [USITC Trade Data](https://dataweb.usitc.gov/)
-- [BLS Employment Projections 2024–2034](https://www.bls.gov/emp/)
+The dashboard is designed to show:
 
----
+- sector-level employment trends
+- year-over-year change views
+- forecast scenarios
+- policy-event context
+- labor-market comparison across sectors
 
-## 💡 Resume Bullets
-
-> Built an end-to-end analytics pipeline analyzing U.S. tariff policy
-> impact on employment (2015–2025) using BLS, FRED, and USITC APIs
-
-> Developed and validated 5-year forecasts using Prophet, achieving <4%
-> error vs 2026 BLS data; identified 3x downstream job loss vs protected
-> jobs and 6–9 month policy lag effects across 5 sectors
+**Live dashboard:** Tableau Public link coming soon
 
 ---
 
-*Analysis by Chidvy | March 2026*
-*Forecast validated against BLS post-benchmark data (March 2025 revision)*
+## Tech stack
+
+- Python
+- PostgreSQL
+- SQL
+- Prophet
+- Tableau
+- BLS / FRED / USITC APIs
+
+---
+
+## Limitations
+
+This analysis does not claim that tariffs alone caused all labor-market changes.
+
+Important limitations include:
+
+- tariff episodes overlapped with other macroeconomic shocks, especially COVID and broader business-cycle effects
+- sector-level employment data supports timing and association, not strict causal attribution
+- forecasts assume a degree of structural continuity and may weaken under future shocks or major policy changes
+
+These limitations strengthen the interpretation by making the analysis more rigorous and credible.
+
+---
+
+## Resume bullets
+
+- Built an end-to-end labor-market analysis workflow using BLS, FRED, and USITC data to assess how major tariff episodes aligned with sector-level employment shifts from 2015–2025
+- Developed and validated five-year sector forecasts in Prophet, achieving forecast error below 4% in 4 of 5 sectors against realized BLS data
+- Identified uneven labor-market reallocation across sectors, showing how headline job growth can mask delayed downstream pressure and sector divergence
