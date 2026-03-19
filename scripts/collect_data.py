@@ -188,7 +188,7 @@ def save_tariff_events():
 # ─────────────────────────────────────────────
 if __name__ == "__main__":
     print("\n🚀 Starting data collection...\n")
-    fetch_bls_data(BLS_SERIES)
+    fetch_bls_data(BLS_SERIES, "2015", "2025")
     fetch_fred_data(FRED_SERIES)
     fetch_usitc_data()
     save_tariff_events()
