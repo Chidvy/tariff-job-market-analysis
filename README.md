@@ -29,7 +29,7 @@ strategy, and investment planning.
 ## 📌 Project Overview
 
 End-to-end analysis of how U.S. tariff policy reshaped American employment
-across 5 major sectors from 2000–2024, with a 5-year forecast through 2029.
+across 5 major sectors from 2015–2025, with a 5-year forecast through 2029.
 
 **Core questions answered:**
 - How did the 2002 Steel Tariffs affect manufacturing employment?
