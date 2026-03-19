@@ -33,8 +33,7 @@ def clean_employment(path: str = f"{RAW_DIR}/bls_employment.csv") -> pd.DataFram
 
     # Forward-fill any gaps (occasional BLS reporting delays)
     df_pivot = df_pivot.sort_values("date")
-    df_pivot = df_pivot.fillna(method="ffill").fillna(method="bfill")
-
+    df_pivot.ffill().bfill()
     # Add year/month columns
     df_pivot["year"]  = df_pivot["date"].dt.year
     df_pivot["month"] = df_pivot["date"].dt.month
