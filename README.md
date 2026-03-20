@@ -151,18 +151,9 @@ Important limitations include:
 - Sector-level employment data supports timing and association, not strict causal attribution
 - Forecasts assume a degree of structural continuity and may weaken under future shocks or major policy changes
 
-These limitations strengthen the interpretation by making the analysis more rigorous and credible.
 
 ---
 
-## Resume Bullets
 
-- Built an end-to-end labor-market analysis workflow using BLS, FRED, and USITC data to assess how major tariff episodes aligned with sector-level employment shifts from 2015–2025
-- Developed and validated five-year sector forecasts in Prophet, achieving forecast error below 4% in 4 of 5 sectors against realized BLS data
-- Identified uneven labor-market reallocation across sectors, showing how headline job growth can mask delayed downstream pressure and sector divergence
 
-## Resume bullets
 
-- Built an end-to-end labor-market analysis workflow using BLS, FRED, and USITC data to assess how major tariff episodes aligned with sector-level employment shifts from 2015–2025
-- Developed and validated five-year sector forecasts in Prophet, achieving forecast error below 4% in 4 of 5 sectors against realized BLS data
-- Identified uneven labor-market reallocation across sectors, showing how headline job growth can mask delayed downstream pressure and sector divergence
