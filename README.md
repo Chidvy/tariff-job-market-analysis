@@ -18,10 +18,10 @@ This project was built around a practical question:
 
 That matters for:
 
-- policy analysis
-- labor-market interpretation
-- supply chain strategy
-- business and investment decision-making
+- Policy Analysis
+- Labor-Market Interpretation
+- Supply Chain Strategy
+- Business and Investment Decision-Making
 
 ---
 
@@ -73,13 +73,13 @@ That means aggregate job numbers alone may not fully reflect what is happening u
 
 I built a multi-step workflow using public economic data:
 
-- collected labor-market and macroeconomic data from **BLS**, **FRED**, and **USITC**
-- cleaned and standardized time-series data in **Python**
-- stored structured datasets in **PostgreSQL**
-- used **SQL** for trend, sector, and lag analysis
-- generated five-year forecasts in **Prophet**
-- validated forecast outputs against realized **BLS** data where available
-- designed a **Tableau** dashboard to make findings easier to interpret
+- Collected Labor-Market and Macroeconomic data from **BLS**, **FRED**, and **USITC**
+- Cleaned and standardized time-series data in **Python**
+- Stored structured datasets in **PostgreSQL**
+- Used **SQL** for trend, sector, and lag analysis
+- Generated five-year forecasts in **Prophet**
+- Validated forecast outputs against realized **BLS** data where available
+- Designed a **Tableau** dashboard to make findings easier to interpret
 
 ---
 
@@ -109,10 +109,10 @@ What this project suggests is that job growth may be becoming more **uneven, con
 
 In practical terms:
 
-- some sectors benefit
-- some sectors stagnate
-- some sectors absorb delayed downstream pressure
-- headline job growth can mask divergence underneath
+- Some sectors benefit
+- Some sectors stagnate
+- Some sectors absorb delayed downstream pressure
+- Headline job growth can mask divergence underneath
 
 ---
 
@@ -147,9 +147,9 @@ This analysis does not claim that tariffs alone caused all labor-market changes.
 
 Important limitations include:
 
-- tariff episodes overlapped with other macroeconomic shocks, especially COVID and broader business-cycle effects
-- sector-level employment data supports timing and association, not strict causal attribution
-- forecasts assume a degree of structural continuity and may weaken under future shocks or major policy changes
+- Tariff episodes overlapped with other macroeconomic shocks, especially COVID and broader business-cycle effects
+- Sector-level employment data supports timing and association, not strict causal attribution
+- Forecasts assume a degree of structural continuity and may weaken under future shocks or major policy changes
 
 These limitations strengthen the interpretation by making the analysis more rigorous and credible.
 
