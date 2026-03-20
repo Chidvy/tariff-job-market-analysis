@@ -6,11 +6,11 @@ This project examines how major U.S. tariff episodes aligned with sector-level e
 
 I built an end-to-end labor-market analysis workflow covering **2015–2025**, with forecasts through **2030**, to test whether tariff-related protection supported durable job growth or instead contributed to more uneven sector outcomes beneath strong aggregate payroll numbers.
 
-**Headline insight:** tariff-related protection appears to support select upstream industries, but broader labor-market effects remain mixed, unevenly distributed, and often delayed rather than immediate.
+**Headline Insight:** Tariff-related protection appears to support select upstream industries, but broader labor-market effects remain mixed, unevenly distributed, and often delayed rather than immediate.
 
 ---
 
-## Why this project matters
+## Why This Project Matters
 
 This project was built around a practical question:
 
@@ -25,17 +25,17 @@ That matters for:
 
 ---
 
-## Key findings
+## Key Findings
 
 - **Manufacturing** remained structurally weak despite protection-focused policy support
 - **Construction** appeared to benefit more than most sectors from reshoring and domestic investment dynamics
 - **Retail Trade** showed weak net job growth despite broader recovery periods
-- **Labor-market effects often appeared with a lag**, rather than immediately after major tariff episodes
-- **Forecasts validated well against realized BLS data**, with forecast error below 4% in 4 of 5 sectors
+- **Labor-Market Effects Often Appeared With a Lag**, rather than immediately after major tariff episodes
+- **Forecasts Validated Well Against Realized BLS Data**, with forecast error below 4% in 4 of 5 sectors
 
 ---
 
-## Main takeaway
+## Main Takeaway
 
 Headline job growth can make the labor market look stronger than it really is.
 
@@ -43,29 +43,29 @@ This analysis suggests that tariff-related protection may support select upstrea
 
 That means aggregate job numbers alone may not fully reflect what is happening underneath the surface.
 
-**Bottom line:** the labor market may appear stable in aggregate while sector-level conditions tell a more fragile and uneven story.
+**Bottom Line:** The labor market may appear stable in aggregate while sector-level conditions tell a more fragile and uneven story.
 
 ---
 
-## Scope of analysis
+## Scope of Analysis
 
-### Historical window
+### Historical Window
 **2015–2025**
 
-### Forecast window
+### Forecast Window
 **2026–2030**
 
-### Sectors analyzed
+### Sectors Analyzed
 - Manufacturing
 - Construction
 - Retail Trade
 - Transportation & Warehousing
 - Total Nonfarm Payrolls
 
-### Policy episodes examined
+### Policy Episodes Examined
 - 2018–2019 U.S.–China Trade War
-- 2020–2021 COVID and supply-chain disruption period
-- 2025 tariff escalation as a forward-looking scenario context
+- 2020–2021 COVID and Supply-Chain Disruption Period
+- 2025 Tariff Escalation as a Forward-Looking Scenario Context
 
 ---
 
@@ -73,7 +73,7 @@ That means aggregate job numbers alone may not fully reflect what is happening u
 
 I built a multi-step workflow using public economic data:
 
-- Collected Labor-Market and Macroeconomic data from **BLS**, **FRED**, and **USITC**
+- Collected labor-market and macroeconomic data from **BLS**, **FRED**, and **USITC**
 - Cleaned and standardized time-series data in **Python**
 - Stored structured datasets in **PostgreSQL**
 - Used **SQL** for trend, sector, and lag analysis
@@ -83,7 +83,7 @@ I built a multi-step workflow using public economic data:
 
 ---
 
-## Forecast validation
+## Forecast Validation
 
 Forecast performance was checked against realized BLS data.
 
@@ -95,13 +95,13 @@ Forecast performance was checked against realized BLS data.
 | Total Nonfarm | 157,616K | 158,466K | 0.5% |
 | Transportation & Warehousing | 6,294K | 6,532K | 3.6% |
 
-**Validation result:** forecast error remained below 4% in 4 of 5 sectors, supporting the model’s usefulness for directional sector-level forecasting.
+**Validation Result:** Forecast error remained below 4% in 4 of 5 sectors, supporting the model’s usefulness for directional sector-level forecasting.
 
 \*Manufacturing deviation was influenced by benchmark revision effects.
 
 ---
 
-## Forward-looking insight
+## Forward-Looking Insight
 
 The labor market is not simply “strong” or “weak.”
 
@@ -116,21 +116,21 @@ In practical terms:
 
 ---
 
-## Tableau dashboard
+## Tableau Dashboard
 
 The dashboard is designed to show:
 
-- sector-level employment trends
-- year-over-year change views
-- forecast scenarios
-- policy-event context
-- labor-market comparison across sectors
+- Sector-level employment trends
+- Year-over-year change views
+- Forecast scenarios
+- Policy-event context
+- Labor-market comparison across sectors
 
-**Live dashboard:** [View on Tableau Public](https://public.tableau.com/app/profile/chidvi.meduri/viz/USTariffs-Job-Market-Sector-Analysis/U_STariifsJobMarketSectorLevelEmploymentTrendsandForecasts?publish=yes)
+**Live Dashboard:** [View on Tableau Public](https://public.tableau.com/app/profile/chidvi.meduri/viz/USTariffs-Job-Market-Sector-Analysis/U_STariifsJobMarketSectorLevelEmploymentTrendsandForecasts?publish=yes)
 
 ---
 
-## Tech stack
+## Tech Stack
 
 - Python
 - PostgreSQL
@@ -154,6 +154,12 @@ Important limitations include:
 These limitations strengthen the interpretation by making the analysis more rigorous and credible.
 
 ---
+
+## Resume Bullets
+
+- Built an end-to-end labor-market analysis workflow using BLS, FRED, and USITC data to assess how major tariff episodes aligned with sector-level employment shifts from 2015–2025
+- Developed and validated five-year sector forecasts in Prophet, achieving forecast error below 4% in 4 of 5 sectors against realized BLS data
+- Identified uneven labor-market reallocation across sectors, showing how headline job growth can mask delayed downstream pressure and sector divergence
 
 ## Resume bullets
 
