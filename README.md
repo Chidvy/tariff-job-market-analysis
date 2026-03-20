@@ -2,7 +2,7 @@
 
 ## Summary
 
-This project examines how major U.S. tariff episodes aligned with sector-level employment shifts using BLS, FRED, and USITC data.
+This project examines how major U.S. tariff episodes aligned with sector-level employment shifts using **BLS**, **FRED**, and **USITC** data.
 
 I built an end-to-end labor-market analysis workflow covering **2015–2025**, with forecasts through **2030**, to test whether tariff-related protection supported durable job growth or instead contributed to more uneven sector outcomes beneath strong aggregate payroll numbers.
 
@@ -50,10 +50,10 @@ That means aggregate job numbers alone may not fully reflect what is happening u
 ## Scope of analysis
 
 ### Historical window
-- **2015–2025**
+**2015–2025**
 
 ### Forecast window
-- **2026–2030**
+**2026–2030**
 
 ### Sectors analyzed
 - Manufacturing
@@ -95,9 +95,9 @@ Forecast performance was checked against realized BLS data.
 | Total Nonfarm | 157,616K | 158,466K | 0.5% |
 | Transportation & Warehousing | 6,294K | 6,532K | 3.6% |
 
-**Validation result:** forecast error remained below **4% in 4 of 5 sectors**, supporting the model’s usefulness for directional sector-level forecasting.
+**Validation result:** forecast error remained below 4% in 4 of 5 sectors, supporting the model’s usefulness for directional sector-level forecasting.
 
-\* Manufacturing deviation was influenced by benchmark revision effects.
+\*Manufacturing deviation was influenced by benchmark revision effects.
 
 ---
 
@@ -126,7 +126,7 @@ The dashboard is designed to show:
 - policy-event context
 - labor-market comparison across sectors
 
-**Live dashboard:**(https://public.tableau.com/app/profile/chidvi.meduri/viz/USTariffs-Job-Market-Sector-Analysis/U_STariifsJobMarketSectorLevelEmploymentTrendsandForecasts?publish=yes)
+**Live dashboard:** [View on Tableau Public](https://public.tableau.com/app/profile/chidvi.meduri/viz/USTariffs-Job-Market-Sector-Analysis/U_STariifsJobMarketSectorLevelEmploymentTrendsandForecasts?publish=yes)
 
 ---
 
