@@ -121,7 +121,6 @@ In practical terms:
 The dashboard is designed to show:
 
 - Sector-level employment trends
-- Year-over-year change views
 - Forecast scenarios
 - Policy-event context
 - Labor-market comparison across sectors
