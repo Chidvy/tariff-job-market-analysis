@@ -125,7 +125,7 @@ The dashboard is designed to show:
 - Policy-event context
 - Labor-market comparison across sectors
 
-**Live Dashboard:** [View on Tableau Public](https://public.tableau.com/app/profile/chidvi.meduri/viz/USTariffs-Job-Market-Sector-Analysis/U_STariifsJobMarketSectorLevelEmploymentTrendsandForecasts?publish=yes)
+**Live Dashboard:** [View on Tableau Public](https://public.tableau.com/app/profile/chidvi.meduri3600/viz/USTariffs-Job-Market-Sector-Analysis_17742224578680/U_STariifsJobMarketSectorLevelEmploymentTrendsandForecasts?publish=yes)
 
 ---
 
